@@ -1,4 +1,4 @@
-package org.bakasu.bakasu.ui.util.module
+package org.bakasu.bakasu.ui.util
 
 import android.app.AppOpsManager
 import android.content.ComponentName
@@ -19,9 +19,6 @@ import org.bakasu.bakasu.R
 import org.bakasu.bakasu.data.AppSettingsRepository
 import org.bakasu.bakasu.data.shell.ShortcutRepository
 import org.bakasu.bakasu.ui.MainActivity
-import org.bakasu.bakasu.ui.util.isColorOS
-import org.bakasu.bakasu.ui.util.isHyperOS
-import org.bakasu.bakasu.ui.util.isMiui
 import org.bakasu.bakasu.ui.webui.WebUIActivity
 
 class Shortcut(

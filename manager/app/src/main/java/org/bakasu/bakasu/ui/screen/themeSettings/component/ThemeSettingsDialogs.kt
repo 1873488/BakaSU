@@ -20,6 +20,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
+import androidx.compose.material3.rememberSliderState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
@@ -280,9 +281,8 @@ private fun ColorSlider(
             modifier = Modifier.padding(end = 12.dp),
         )
         Slider(
-            value = value,
+            state = rememberSliderState(value = value, steps = 0, trackRange = valueRange),
             onValueChange = onValueChange,
-            valueRange = valueRange,
             modifier = Modifier.weight(1f),
         )
         Box(
